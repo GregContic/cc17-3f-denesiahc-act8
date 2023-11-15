@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter Your Name:" required /></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter Your Name:" required /></label>
+        <label for="number" id="number-label">Number: <input id="number" name="number" type="number" min="0" max="6969696969696969696969696969" placeholder="Enter Your Number:" required /></label>
+        <label for="age">Age: <input id="age" type="number" name="age" min="13" max="99" placeholder="Enter Your Age:" required/></label>
+      </fieldset>
+      <fieldset>
+        <p id="description">Does this survey annoy you?</p>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="choice1"/> Yes</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="choice2"/> Yep, definitely</label>
+        <p id="description">Ooh look! Checkable Boxes!</p>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="luh"/> click me
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="calm"/> click me too
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="fit"/> my code was copy pasted lol
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Write a feedback (or not):
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Ur lil survey sux..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
