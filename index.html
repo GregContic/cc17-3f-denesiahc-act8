@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   </head>
 
   <body>
@@ -14,10 +15,18 @@
         <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
           <div id="form1">
             <fieldset>
-              <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter Your Name:" required /></label>
-              <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter Your Name:" required /></label>
-              <label for="number" id="number-label">Number: <input id="number" name="number" type="number" min="0" max="6969696969696969696969696969" placeholder="Enter Your Number:" required /></label>
-              <label for="age">Age: <input id="age" type="number" name="age" min="13" max="99" placeholder="Enter Your Age:" required/></label>
+              <div class="input">
+                <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter Your Name:" required /></label>
+              </div>
+              <div class="input">
+                <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter Your E-Mail:" required /></label>
+              </div>
+              <div class="input">
+                <label for="number" id="number-label">Number: <input id="number" name="number" type="number" min="0" max="6969696969696969696969696969" placeholder="Enter Your Number:" required /></label>
+              </div>
+              <div class="input">
+                <label for="age">Age: <input id="age" type="number" name="age" min="13" max="99" placeholder="Enter Your Age:" required/></label>
+              </div>
             </fieldset>
           </div>
           <div id="form2">
