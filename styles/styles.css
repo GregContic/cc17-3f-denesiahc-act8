@@ -6,12 +6,12 @@
 /* Media query for screens wider than 768px */
 @media (min-width: 768px) and (max-width: 1024px) {
   * {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   * {
-    width: 70%;
+    width: 100%;
   }
 }
 
